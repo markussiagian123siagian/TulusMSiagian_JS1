@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Penjualan Mobil</title>
+    <script src="ifelse.js"></script>
+</head>
+<body>
+    <h1>Form Penjualan Mobil</h1>
+    <form>
+        <label for="merk">Merk Mobil:</label>
+        <input type="text" id="merk" required><br>
+
+        <label for="tahun">Tahun Produksi:</label>
+        <input type="number" id="tahun" required><br>
+
+        <label for="harga">Harga Mobil (Rp):</label>
+        <input type="number" id="harga" required><br>
+
+        <label for="diskon">Diskon (%):</label>
+        <input type="number" id="diskon" required><br>
+
+        <button type="button" onclick="hitungHarga()">Hitung Harga</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <script type='text/javascript'src="index.js"></script>
+</head>
+<body>
+      <h1>
+        Form Penjualan Mobil
+      </h1>
+      <form name="form">
+        <label>
+          Nama Pembeli
+        </label>
+        <input type="text" name="input_nama" size=10>
+        <br/>
+        <label>
+          Pilih Mobil
+        </label>
+        <select name="input_mobil" onchange="munculhargamobil()">
+          <option value="pilih">
+            --Pilih--
+          </option>
+          <option value="Avanza Veloz">
+            Avanza Veloz
+          </option>
+          <option value="Innova Reborn">
+            Innova Reborn
+          </option>
+          <option value="Rubicon">
+            Rubicon
+          </option>
+        </select>
+        <label>
+          Harga
+        </label>
+        <input type="text" name="output_hargamobil" size=10>
+        <br/>
+        <label>
+          Tipe Mobil
+        </label>
+        <select name="input_tipemobil" onchange="munculhargatipemobil()">
+          <option value="pilih">
+            --Pilih--
+          </option>
+          <option value="Sedan">
+            Sedan
+          </option>
+          <option value="Sport">
+            Sport
+          </option>
+          <option value="Dakar">
+            Dakar
+          </option>
+        </select>
+        <label>
+          Biaya Tambahan
+        </label>
+        <input type="text" name="output_tambahanbiaya" size=10>
+        <br/>
+        <label>
+          Member?
+        </label>
+        <input type="checkbox" name="memberbukan" onchange="apakahmember()"/>
+        <label>
+          Diskon
+        </label>
+        <input type="text" name="output_diskon" size=10/>
+        <br/>
+        <label>
+          Jumlah Mobil
+        </label>
+        <input type="text" name="input_jumlahmobil" size=10>
+        <br/>
+        <input type="button" Onclick="totalharga()" value='Hitung'>
+        <input type="reset" value='Clear'>
+        <br/>
+        <label>
+          Total Harga
+        </label>
+        <input type="text" name="output_totalharga" size=10>
+      </form>
+</body>
+</html>

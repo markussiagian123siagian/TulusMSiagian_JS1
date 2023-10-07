@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Statement</title>
+</head>
+<body>
+    <h1>Perulangan For Pada Javascript</h1>
+    <button onclick="klik()">TOMBOL</button>	
+	
+    <!-- id hasil -->
+	<div id="hasil"></div>
+	<script>
+		function klik() {
+		    var text = "";
+		    var x;
+		    for (x = 1; x <= 2000; x++) {
+		        text += "Hasil penjualan ke- " + x + "<br>";
+		    }
+		    document.getElementById("hasil").innerHTML = text;
+		}
+	</script>
+</body>
+</html>
